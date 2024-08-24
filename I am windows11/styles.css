@@ -1,0 +1,338 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    overflow: hidden;
+    height: 100vh;
+  }
+
+
+.taskbar{
+    background-color: #FFFFFF;
+    width: 100%;
+    position: absolute;
+    margin-top: 830px;
+    display: flex;
+    z-index: 110;
+    justify-content: center;
+}
+
+.startmenu{
+    position: absolute; 
+    bottom: -685px;
+    width: 100%;
+    text-align: center;
+    transition: all 0.3s ease-in; 
+}
+
+.startmenu img{
+    border-radius: 8px;
+}
+
+.right{
+    justify-self: flex-end;
+    position: absolute;
+    right: 0;
+    margin: 6px 0;
+    height: 85%;
+}  
+.icons{
+    color: white;
+} 
+
+.chrome-container {
+    position: absolute;
+    top: 8px;
+    right: 627px;
+    text-align: center;
+    width: 80px; 
+    cursor: pointer;
+}
+
+.chrome-link {
+    text-decoration: none; 
+    color: inherit; 
+    cursor: pointer;
+}
+
+
+.chrome-icon {
+    width: 55px;  
+    height: auto;
+}
+
+.chrome-container a {
+    display: inline-block;
+}
+
+.github-container {
+    position: absolute;
+    top: 4px;
+    right: 585px;
+    text-align: center;
+    width: 80px; 
+}
+
+.github-link {
+    text-decoration: none; 
+    color: inherit; 
+}
+
+
+.github-icon {
+    width: 35px;  
+    height: auto;
+}
+
+.github-container a {
+    display: inline-block;
+}
+
+.microsoft-container {
+    position: absolute;
+    top: 8.5px;
+    right: 670px;
+    text-align: center;
+    width: 80px; 
+}
+
+.microsoft-link {
+    text-decoration: none; 
+    color: inherit; 
+}
+
+
+.microsoft-icon {
+    width: 28px;  
+    height: auto;
+}
+
+.microsoft-container a {
+    display: inline-block;
+}
+
+.linkdin-container {
+    position: absolute;
+    bottom: 0px;
+    top: 4px;
+    right: 713px;
+    text-align: center;
+    width: 80px; 
+}
+
+.linkdin-link {
+    text-decoration: none; 
+    color: inherit; 
+}
+
+
+.linkdin-icon {
+    width: 38px;  
+    height: auto;
+}
+
+.linkdin-container a {
+    display: inline-block;
+}
+
+.vscode-container {
+    position: absolute;
+    bottom: 10px;
+    top:6px;
+    right: 756px;
+    text-align: center;
+    width: 80px; 
+}
+
+.vscode-link {
+    text-decoration: none; 
+    color: inherit; 
+}
+
+
+.vscode-icon{
+    width: 48px;  
+    height: auto;
+}
+
+.vscode-container a {
+    display: inline-block;
+}
+
+.edge-container {
+    position: absolute;
+    bottom: 10px;
+    top:9px;
+    right: 799px;
+    text-align: center;
+    width: 80px; 
+}
+
+.edge-link {
+    text-decoration: none; 
+    color: inherit; 
+}
+
+
+.edge-icon{
+    width: 25px;  
+    height: auto;
+}
+
+.edge-container a {
+    display: inline-block
+}
+
+.spotify-container {
+    position: absolute;
+    top:1px;
+    bottom: 1px;
+    right: 865px;
+    text-align: center;
+    border:none;
+}
+
+.spotify-link {
+    text-decoration: none; 
+    color: inherit; 
+}
+
+.spotify-icon {
+    width: 43px; 
+    height: auto;
+}
+
+.spotify-container a {
+    display: inline-block;
+}
+
+.spotify {
+    width: 43px;  
+    height: auto;
+}
+
+.gemini-container {
+    position: absolute;
+    top: 5px;
+    bottom: 1px;
+    right: 910px;
+    text-align: center;
+    border:none;
+}
+
+.gemini-link {
+    text-decoration: none; 
+    color: inherit; 
+}
+
+.gemini-icon {
+    width: 32px;  
+    height: auto;
+}
+
+.gemini-container a {
+    display: inline-block;
+}
+
+.gemini{
+    width: 32px;  
+    height: auto;
+}
+
+@media (max-width: 320px) {
+    .taskbar {
+        margin-top: auto;
+        bottom: 0;
+    }
+    
+    .chrome-container, .github-container, .microsoft-container, 
+    .linkdin-container, .vscode-container, .edge-container, 
+    .spotify-container, .copilot-container {
+        width: 60px;
+        top: auto;
+        bottom: 5px;
+    }
+
+    .chrome-container {
+        right: 50px;
+    }
+
+    .github-container {
+        right: 110px;
+    }
+
+    .microsoft-container {
+        right: 170px;
+    }
+
+    .linkdin-container {
+        right: 230px;
+    }
+
+    .vscode-container {
+        right: 290px;
+    }
+
+    .edge-container {
+        right: 350px;
+    }
+
+    .spotify-container {
+        right: 410px;
+    }
+
+    .copilot-container {
+        right: 470px;
+    }
+
+    .chrome-icon, .github-icon, .microsoft-icon, 
+    .linkdin-icon, .vscode-icon, .edge-icon, 
+    .spotify-icon, .copilot-icon {
+        width: 40px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .taskbar {
+        margin-top: 730px; 
+    }
+    .chrome-container {
+        top: 20px;
+        left: 10px;
+        width: 60px;
+    }
+    .chrome-icon {
+        width: 60px;
+    }
+}
+
+@media (max-width: 480px) {
+    .taskbar {
+        margin-top: 630px; 
+    }
+    .chrome-container {
+        top: 30px;
+        left: 5px;
+        width: 50px; 
+    }
+    .chrome-icon {
+        width: 50px;
+    }
+}
+
+@media (max-width: 320px) {
+    .taskbar {
+        margin-top: 530px;
+    }
+    .chrome-container {
+        top: 40px;
+        left: 2px;
+        width: 40px; 
+    }
+    .chrome-icon {
+        width: 40px;
+    }
+}
